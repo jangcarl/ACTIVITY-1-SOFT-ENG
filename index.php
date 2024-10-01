@@ -18,7 +18,6 @@
 
 	<p>
 		<?php
-			// Display an error message if one is set
 			if(isset($_GET['error']) && $_GET['error'] === 'already_logged_in') {
 				echo $_SESSION['firstName'] . ' is already logged in. Wait for him to log out first.';
 			} else {
